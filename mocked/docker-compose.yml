@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+    fakeapi1:
+        build: .
+        container_name: fakeapi1
+        ports:
+          - 5001:5000
+        environment:
+          - SEED=3
+    fakeapi2:
+        build: .
+        container_name: fakeapi2
+        ports:
+          - 5002:5000
+        environment:
+          - SEED=6
+    fakeapi3:
+        build: .
+        container_name: fakeapi3
+        ports:
+          - 5003:5000
+        environment:
+          - SEED=9

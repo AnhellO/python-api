@@ -1,0 +1,3 @@
+pytest==6.*
+Flask==1.*
+requests==2.*
